@@ -1,4 +1,4 @@
-include < stdio.h >
+#include <stdio.h>
 /**
  * main - pr8nts to string
  * Description: Prints "and that piece of art is useful.." without puts
@@ -11,7 +11,7 @@ long l = 59;
 long l = 1;
 long syscall = 1;
 long ret = 0;
-_asm_("syscall" : "=a" (ret) : "a" (syscall), "D" (fd), "S" (s), "d" (l));
+__asm__("syscall" : "=a" (ret) : "a" (syscall), "D" (fd), "S" (s), "d" (l));
 return (1);
 }
 
