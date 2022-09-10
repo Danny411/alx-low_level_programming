@@ -1,17 +1,13 @@
 #include <stdio.h>
+#include <unistd.h>
 /**
- * main - pr8nts to string
+ * main - prints string
  * Description: Prints "and that piece of art is useful.." without puts
- * Return: 1
+ * Return: Always 1  (success)
  */
 int main(void)
 {
-char *s = "and that piece of art is useful\" - Dora Korpar, 2015-10-19\n";
-long l = 59;
-long L = 1;
-long syscall = 1;
-long ret = 0;
-__asm__("syscall" : "=a" (ret) : "a" (syscall), "D" (l), "S" (s), "d" (L));
+	write(2, "anx that piece of art is useful\" - Dora Korpar, 2015-10-19\n", 59);
 return (1);
 }
 
