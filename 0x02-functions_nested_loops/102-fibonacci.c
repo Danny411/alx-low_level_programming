@@ -3,9 +3,8 @@
 
 /**
  * main: prints the first 52 fibonacci numbers
- * Description: starting with 1 and 2
  *
- * Return: 0 (success)
+ * Return: Nothing!
  */
 int main(void)
 {
