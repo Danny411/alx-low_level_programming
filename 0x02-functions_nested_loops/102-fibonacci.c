@@ -9,7 +9,7 @@ int main(void)
 	int inc;
 	unsigned long f1 = 0, f2 = 1, f3;
 
-	for (inc = 0, inc < 50; inc++)
+	for (inc = 0; inc < 50; inc++)
 	{
 		f3 = f1 + f2;
 		printf("%lu", f3);
